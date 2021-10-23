@@ -23,7 +23,7 @@ title: FLORIAN WAGNER
 email: mail@florianwagner.me
 description: >- # this means to ignore newlines until "baseurl:"
   Greetings, 
-  My name is Florian Wagner and I'm a passionate Security Consultant and White Hat Hacker living in the Kotor Bay Area in Montenegro.
+  My name is Florian Wagner and I'm a passionate White Hat Hacker and IT Security Expert living in the Kotor Bay Area in Montenegro.
   My mission is to provide frameworks, tools and services to increase the information security posture of businesses and people around the world.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
