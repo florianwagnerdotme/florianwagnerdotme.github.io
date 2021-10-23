@@ -23,7 +23,7 @@ Furthermore, most mobile apps rely on user tracking to make money which is, out 
 2. Never violate any local applicable law, like GDPR in Europe.
 3. At best give the user an option to opt out the tracking when the user first opens the app.
 
-In conclusion, for our society mobile security is one of the most important fields of security that is out there. Security flaws in standards and vulnelrabilities in software are impacting everyone, from businesses to private people. The "security by design" paradigm should be followed and used as early in the planning phase of an app as possible.  
+In conclusion, for our society mobile security is one of the most important fields of security that is out there. Security flaws in standards and vulnerabilities in software are impacting everyone, from businesses to private people. The "security by design" paradigm should be followed and used as early in the planning phase of an app as possible.  
 
 # “Education is the key to unlock the golden door of freedom.” 
 > George Washington Carver
