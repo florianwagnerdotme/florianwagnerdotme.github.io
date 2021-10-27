@@ -44,71 +44,72 @@ On native macOS you will not have any problem to follow my instructions. On Linu
 
 # Jailbreaking iOS 12.0-14.7.1 with checkra1n
 
-i1. Downlaod the latest version of checkra1n from the offical website (step 1): [https://checkra.in][checkra1n] --> "Get the beta now" - make a selection for the installer based on your environment.  
+Step 1: Downlaod the latest version of checkra1n from the offical website: [https://checkra.in][checkra1n] --> "Get the beta now" - make a selection for the installer based on your environment. Normally it will detect your environment automatically.  
 
 ![checkra1n website]({{ site.url }}/assets/article2/1checkra1nWebsite.png){: .center-image}
 
-i2. Click on "Download for macOS", optionally check the downloaded installer against malware with your antivirus of choise (if at all only "MacOS:Jailbreak-BI" should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash displayed at step 2.  
-i3. Save the installer locally.  
-
+Step 2: Click on "Download for macOS", optionally check the downloaded installer against malware with your antivirus of choise (if at all only "MacOS:Jailbreak-BI" should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash.  
+Step 3: Save the installer locally.    
 
 ![checkra1n download]({{ site.url }}/assets/article2/2checkra1nDownload.png){: .center-image}
 
-i4.  Install checkra1n on macOS by opening it from your desktop.  
+Step 4: Install checkra1n on macOS by opening it from your desktop.  
 
-i5. Drag the application into the application's folder.  
+Step 5: Drag the application into the "Applications" folder.  
 
 ![checkra1n installation]({{ site.url }}/assets/article2/3checkra1nInstallation.png){: .center-image}
 
-i6. Open your macOS "System Preferences", go to "Security & Privacy" and click on "Click the lock to make changes.".  
+Step 6: Open your macOS "System Preferences", go to "Security & Privacy" and click on "Click the lock to make changes.". Enter your password and proceed.  
 
-i7. After providing your password you can click on "Open Anyway" to allow the execution of "checkra1n" even though it could not be identified.  
+Step 7: Now click on "Open Anyway" to allow the execution of "checkra1n" even though the developer could not be identified by Apple.  
 
 ![checkra1n security exception]({{ site.url }}/assets/article2/4checkra1nSecurityException.png){: .center-image}
 
-i8. Confirm your choice by clicking on "Open".
+Step 8: Confirm your choice by clicking on "Open".  
 
 ![checkra1n security exception]({{ site.url }}/assets/article2/5checkra1nSecurityException.png){: .center-image}
 
-i9. With your iPhone connected over USB you will now presented with the start screen of checkra1n.
+Step 9: With your iPhone connected over USB you will now be presented with the start screen of checkra1n.
 
 ![checkra1n first start]({{ site.url }}/assets/article2/6checkra1nOpenedWithiPhoneConnected.png){: .center-image}
 
-i10. Getting your iPhone ready by starting it into DFU mode. On iPhone 6s you have to press and hold the power button + home button until you are in DFU mode.
+Step 10: OPTIONAL - Get your iPhone ready by starting it into DFU mode. On iPhone 6s you have to press and hold the power button + home button until you are in DFU mode.
 
 ![checkra1n DFU mode]({{ site.url }}/assets/article2/7checkra1niPhoneDFUMode.png){: .center-image}
 
-i11. Next start the app and click on "Options".
+Step 11: Next start the app and click on "Options".
 
 ![checkra1n Options]({{ site.url }}/assets/article2/8checkra1nOptions.png){: .center-image}
 
-i12. If you have your device already updated to iOS 14.7.1 (and if something is not working) select the first option. Activate the verbose mode to see a wall of text while checkra1n gets executed (more or less only because it looks neat :-)
-i13. For all of you who are doing this with an iPhone 8s up to X, you have to select this option too.
-i14. After everything is selected, click on "Back".
+Step 12: If you have your device already updated to iOS 14.7.1 (and if something is not working) select the first option. Activate the verbose mode to see a wall of text while checkra1n gets executed (more or less only because it looks neat :-)  
+
+Step 13: For all of you who are doing this with an iPhone 8s up to X, you have to select this option too.  
+
+Step 14: After everything is selected, click on "Back".  
 
 ![checkra1n Options]({{ site.url }}/assets/article2/9checkra1nOptionSelection.png){: .center-image}
 
-i15. You can now click on "Start" to start checkra1n.
+Step 15: You can now click on "Start" to start checkra1n and the exploitation.  
 
 ![checkra1n Options]({{ site.url }}/assets/article2/10checkra1nStart.png){: .center-image}
 
-i16. Read the instructions displayed and follow them for your device to go into DFU (if not happend already) and execute the checkra1n payload. I have set mine already into DFU mode because I have made experience that his is working better.
+Step 16: Read the instructions displayed and follow them for your device to go into DFU (if not happend already) and execute the checkra1n payload. I have set mine already into DFU mode because I have made experience that his is working better.
 
 ![checkra1n Options]({{ site.url }}/assets/article2/11checkra1nStart.png){: .center-image}
 
-i17. After you have executed the steps successfully it should look like this. Your device should now boot up with a wall of text, indicating the execution of checkra1n.
+Step 17: After you have executed the steps successfully it should look like this. Your device should now boot up with a wall of text, indicating the execution of checkra1n.
 
 ![checkra1n Options]({{ site.url }}/assets/article2/12checkra1nBoot.png){: .center-image}
 
-i18. Finally you get a message that the everything is done and you can click on "Done" to close the window.
+Step 18: Finally you get a message that the everything is done and you can click on "Done" to close the window.
 
 ![checkra1n Options]({{ site.url }}/assets/article2/13checkra1nDone.png){: .center-image}
 
-i19. On your phone you should now see an app installed with the name "checkra1n" - this can take a couple seconds after the first start, just wait a while and then search your apps.
+Step 19: On your phone you should now see an app installed with the name "checkra1n" - this can take a couple seconds after the first start, just wait a while and then search your apps.
 
 ![checkra1n Options]({{ site.url }}/assets/article2/14checkra1nInstalled.png){: .center-image}
 
-i20. Open your newly installed checkra1n app. This verifies a successful installation. You can now proceed and install the Cydia store to download applications like OpenSSH, UNIX tools, SSLKillSwitch usw.
+Step 20: Open your newly installed checkra1n app. This verifies a successful installation. You can now proceed and install the Cydia store to download applications like OpenSSH, UNIX tools, SSLKillSwitch usw.
 
 ![checkra1n Options]({{ site.url }}/assets/article2/15checkra1nAppOpened.png){: .center-image}  
 
