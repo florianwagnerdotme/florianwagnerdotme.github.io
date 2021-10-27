@@ -49,6 +49,7 @@ Step 1: Downlaod the latest version of checkra1n from the offical website: [http
 ![checkra1n website]({{ site.url }}/assets/article2/1checkra1nWebsite.png){: .center-image}
 
 Step 2: Click on "Download for macOS", optionally check the downloaded installer against malware with your antivirus of choise (if at all only "MacOS:Jailbreak-BI" should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash.  
+
 Step 3: Save the installer locally.    
 
 ![checkra1n download]({{ site.url }}/assets/article2/2checkra1nDownload.png){: .center-image}
@@ -136,4 +137,3 @@ Florian
     margin: 0 auto;
     display: block;
 }
-</style>/Users/florian/Documents/work/website/florianwagnerdotme.github.io/assets 
