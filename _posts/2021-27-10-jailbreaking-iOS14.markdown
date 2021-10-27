@@ -5,7 +5,7 @@ date:   2021-10-27 12:00:00 +0200
 categories: mobile app hacking, iOS hacking
 ---
 Like in my [introduction article][easierDoneThanSaid] said, the following will get you started with hacking iOS Apps. First things first, to  get started you will need something to install and test your app of choice. While on Android there are emulators that are emulating CPU instruction sets very well and allow an almost native experience in comparison to a real Android device this is different on iOS. The only company I am aware of that is offering a remote conntection to an iOS virtual device is [Corellium][corellium]. I personally have not tried their services thats why I can´t tell you if their virtual iOS experience has any downfalls in terms of security tests. I could imagine that a virtual iOS environment can be very interesting and useful for security automation.    
-My recommended way to start is to perform security tests on a real iOS device.  
+My recommended way to start is by using a real iOS device.  
 Due to the long support of devices by Apple it is very easy to get your hands on a test device. For this I would recommend you to buy a **used** iPhone between iPhone 6s to iPhone X or the iPad equivalent with an installed software version in between iOS 12.0 to 14.7.1. Maybe you even hoard your old iPhone somewhere - then get it out now!    
 
 Why these recommendations?  
@@ -13,52 +13,56 @@ Why these recommendations?
 1. iPhones and iPads are easy and cheap to get online, especially used (you get the iPhone 6s from 30-100 bucks). 
 2. The easiest and most reliable jailbreak currently available works on them (see [checkra1n][checkra1n]). 
 3. You do something good for the environment in reusing an old device and giving it a new purpose. ;-)
-4. With a buyers/sellers contract you can even take used devices off your taxes (e.g. for an educational purpose)!
+4. With a buyers/sellers contract you can even take used devices off your taxes (e.g. for an educational purpose).
 
 # [checkra1n][checkra1n], a remarkable jailbreak
 
-The jailbreak we will use to break free our iPhone within this article is checkra1n. Like mentioned, checkra1n is one of the easiest and most reliable jailbreaks ever released. Its base is a bug found within the Boot ROM (aka SecureROM), the first code that is running when starting up an iOS device. Because of this and the fact that the Boot ROM is designed to be read only, Apple is and will never be able to patch this bug within the vulnerable devices.  
-On top of this checkra1n is a semi-tethered jailbreak, which means that it only persists until the next reboot of the device which makes it really easy to remove.
-While checkra1n has many advantages for security researchers and penetration testers it is **NOT recommended** to install any jailbreak on your primary device. Jailbreaking your device will remove main security restrictions by Apple and makes attacking your device much easier. checkra1n undermines the trust of the iOS secure boot chain and will allow attackers to gain easy access and privilege escallation. My recommendation for all of you who wonder how they can protect themself is, if you can afford it, get an iOS Device with an A12 CPU or higher. As another countermeasure restart your device every time after you have left it unattended.  
+The jailbreak we will use to break free our iDevice of choice is checkra1n. Like mentioned, checkra1n is one of the easiest and most reliable jailbreaks ever released. Its base is a bug found within the Boot ROM (aka SecureROM), the first code that is running when starting up an iOS device. Because of this and the fact that the Boot ROM is designed to be read only, Apple is and will never be able to patch this bug within the vulnerable devices.  
+On top of this checkra1n is a semi-tethered jailbreak which means that it only persists until the next reboot of the device which makes it easy to remove.
+While checkra1n has many advantages for security researchers and penetration testers it is **NOT recommended** to install any jailbreak on your primary device. Jailbreaking your device will remove main security restrictions by Apple and makes hacking your device much easier. checkra1n undermines the trust of the iOS secure boot chain and will allow attackers to gain easy access and privilege escallation on your device. My recommendation for all of you who wonder how they can protect themself is, if you can afford it, get an iOS Device with an A12 CPU or higher. As another countermeasure restart your device every time after you have left it unattended.  
 
-![News report: iPhone Jailbreak by Florian Wagner]({{ site.url }}/assets/article2/iPhoneInJail.png){: .center-image}
+![News report: iPhone Jailbreak by Florian Wagner]({{ site.url }}/assets/article2/iPhoneInJail.png){: .center-image}  
 
 "News report: iPhone Jailbreak" illustrated by Florian Wagner - [CC BY-NC-ND 4.0][cc] 04/10/21  
 
-#Requirements for the checkra1n jailbreak
-  
-To jailbreak you iOS device you will need a device to execute the [checkra1n][checkra1n] application from. If you have a notebook or desktop PC with Linux ready to go, this is time to get the engine started. MS Windows is currently not supported by the checkra1n authors - I would recommand you either try to execute the script with the [Windows Subsystem for Linux][WSL] (I have never tested this) or to create a bootable usb stick with e.g. [Ubuntu][ubuntu] and execute checkra1n from the live system. Due to the handling of USB device in virtual machines jailbreaking your iDevice will not work out of a Unix virtual machine.
-On native MacOS you will not have any problem to follow my instructions. On Linux you have to download the bash script and run it within the terminali (don`t forget to give it execution permissions ;-) beginning with step 10 below the steps are identical. For an easier follow along I have listed the steps to jailbreak your iPhone/iPad below. What I show you has been successfully tested on my Macbook with MacOS Monterey 12.0.1 and my iPhone 6s with iOS 14.7.1 installed.
+# Requirements to use the checkra1n jailbreak  
+
+To jailbreak you iOS device you will need a device to execute the [checkra1n][checkra1n] application from. If you have a notebook or desktop PC with Linux or macOS ready to go, this is time to get the engine started. MS Windows is currently not supported by the checkra1n authors - I would recommand you either try to execute the script with the [Windows Subsystem for Linux][WSL] (I have never tested this) or to create a bootable usb stick with e.g. [Ubuntu][ubuntu] and execute checkra1n from the live system. Due to the handling of USB devices in virtual machines jailbreaking your iDevice will not work out of a Linux/macOS virtual machine.
+On native macOS you will not have any problem to follow my instructions. On Linux you have to download the bash script and run it within the CLI (don`t forget to give it execution permissions ;-). For an easier follow along I have listed the steps to jailbreak your iPhone/iPad below. What I show you has been successfully tested on my Macbook with macOS Monterey 12.0.1 and my iPhone 6s with iOS 14.7.1 installed.
 
 # Hints and disclaimer:
  
-* You will need a USB type A to lightning cable to directly connect your iPhone/iPad to your computer (USB C to ligning cables are from my experience not working). 
+* You will need a USB type A to lightning cable to directly connect your iPhone/iPad to your computer (USB C to ligtning cables were not working for me). 
 * Notice that this will not work with any kind of docking station, it has to be the USB A to lightning cable connect directly from your computer to the iDevice. 
 * If you do this with an iPhone 8s up to the iPhone X you have to activate the "Skip A11 BPR check" (open checkra1n app --> Options --> activate "Skip A11 BPR check"), before starting the Jailbreak process. Other then that you can follow along the process like discribed below. 
 * Make sure that your phone has enough charge before you try this - 50% should be enough.
 * Prior execution of the steps below make sure that you deactivate the pin/passcode/touchID/FaceID login.
-* Again, please do not use your productivly used iDevice for this. Jailbreaking our iDevice removes important security restrictions from your phone. 
+* Again, please do not use your productivly used iDevice for this. Jailbreaking our iDevice removes important security restrictions from your device. 
 * checkra1n is a semi-tethered jailbreak variant which means that it will last until the device restarts.
 * Take note that jailbreaking your iOS device with this method can be reversed but that I will not take any responsibility for any damage to your devices that might occure. Do your research aside from this article and make sure that you understand what you do before taking any action.
-* All techniques provided in my articles are solely meant for educational purposes. Do not use any of this information other then for ethical hacking, own research or personal use. 
+* All techniques provided in my articles are solely meant for ethical hacking, educational purposes or personal use. 
 
 # Jailbreaking iOS 12.0-14.7.1 with checkra1n
 
-1. Downlaod the latest version of checkra1n from their offical website (step 1): [https://checkra.in][checkra1n] --> "Get the beta now" - make a selection for the installer based on your environment.  
+1. Downlaod the latest version of checkra1n from the offical website (step 1): [https://checkra.in][checkra1n] --> "Get the beta now" - make a selection for the installer based on your environment.  
+
 ![checkra1n website]({{ site.url }}/assets/article2/1checkra1nWebsite.png){: .center-image}
 
-2. Click on "Download for macOS", optionally check the downloaded installer against malware with your antivirus of choise (if at all only "MacOS:Jailbreak-BI" should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash displayed at step 2.
-3. Save the installer locally.
+2. Click on "Download for macOS", optionally check the downloaded installer against malware with your antivirus of choise (if at all only "MacOS:Jailbreak-BI" should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash displayed at step 2.  
+3. Save the installer locally.  
+
 
 ![checkra1n download]({{ site.url }}/assets/article2/2checkra1nDownload.png){: .center-image}
 
-4. Install checkra1n on macOS by opening it from your desktop.
-5. Drag the application into the application's folder.
+4.  Install checkra1n on macOS by opening it from your desktop.  
+
+5. Drag the application into the application's folder.  
 
 ![checkra1n installation]({{ site.url }}/assets/article2/3checkra1nInstallation.png){: .center-image}
 
-6. Open your macOS "System Preferences", go to "Security & Privacy" and click on "Click the lock to make changes.".
-7. After providing your password you can click on "Open Anyway" to allow the execution of "checkra1n" even though it could not be identified.   
+6. Open your macOS "System Preferences", go to "Security & Privacy" and click on "Click the lock to make changes.".  
+
+7. After providing your password you can click on "Open Anyway" to allow the execution of "checkra1n" even though it could not be identified.  
 
 ![checkra1n security exception]({{ site.url }}/assets/article2/4checkra1nSecurityException.png){: .center-image}
 
