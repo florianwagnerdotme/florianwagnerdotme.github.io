@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting started with iOS app hacking - escape the prison!"
-date:   2021-10-27 12:00:00 +0200
+date:   2021-10-29 12:00:00 +0200
 categories: mobile app hacking, iOS hacking
 ---
 Like in my [introduction article][easierDoneThanSaid] said, the following will get you started with hacking iOS Apps. First things first, to  get started you will need something to install and test your app of choice. While on Android there are emulators that are emulating CPU instruction sets very well and allow an almost native experience in comparison to a real Android device this is different on iOS. The only company I am aware of that is offering a remote conntection to an iOS virtual device is [Corellium][corellium]. I personally have not tried their services thats why I can´t tell you if their virtual iOS experience has any downfalls in terms of security tests. I could imagine that a virtual iOS environment can be very interesting and useful for security automation.    
