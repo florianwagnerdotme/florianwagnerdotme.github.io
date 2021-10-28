@@ -35,11 +35,13 @@ Because all help in my field of expertise is welcome and needed, I will soon pub
 While freedom is objective please keep care, once you start down the dark path it will forever dominate your destiny. Choose the right one and contribute to the security of everyone.
  
 ---
-Thank you very much for reading my first article and feel free to tell me if you agree or disagree. Subscribe and share!
+Thank you very much for reading my first article and feel free to tell me if you agree or disagree. Check out my next article about [jailbreaking an iPhone and getting started][iPhoneJailbreak] with iOS hacking.  
+ Subscribe and share!
   
 All the best,  
 Florian
 
+[iPhoneJailbreak]: https://florianwagner.me/mobile/app/hacking,/ios/hacking/2021/10/29/jailbreaking-iOS14.html
 [webViewAndroid]: https://developer.android.com/guide/webapps/webview
 [webViewiOS]: https://developer.apple.com/design/human-interface-guidelines/ios/views/web-views/
 [mobileTop10]: https://owasp.org/www-project-mobile-top-10/
