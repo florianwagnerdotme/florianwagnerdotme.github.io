@@ -15,11 +15,12 @@ Why these recommendations?
 3. You do something good for the environment in reusing an old device and giving it a new purpose. ;-)
 4. With a buyers/sellers contract you can even take used devices off your taxes (e.g. for an educational purpose).
 
+While checkra1n has many advantages for security researchers and penetration testers it is **NOT recommended** to install any jailbreak on your primary device. **Jailbreaking your device will remove main security restrictions by Apple** and makes hacking your device much easier. checkra1n undermines the trust of the iOS secure boot chain and will allow attackers to gain easy access and privilege escallation on your device. My recommendation for all of you who wonder how they can protect themself is, if you can afford it, get an iOS Device with an A12 CPU or higher. As another countermeasure restart your device every time after you have left it unattended.  
+
 # [checkra1n][checkra1n], a remarkable jailbreak
 
 The jailbreak we will use to break free our iDevice of choice is checkra1n. Like mentioned, checkra1n is one of the easiest and most reliable jailbreaks ever released. Its base is a bug found within the Boot ROM (aka SecureROM), the first code that is running when starting up an iOS device. Because of this and the fact that the Boot ROM is designed to be read only, Apple is and will never be able to patch this bug within the vulnerable devices.  
-On top of this checkra1n is a semi-tethered jailbreak which means that it only persists until the next reboot of the device which makes it easy to remove.
-While checkra1n has many advantages for security researchers and penetration testers it is **NOT recommended** to install any jailbreak on your primary device. Jailbreaking your device will remove main security restrictions by Apple and makes hacking your device much easier. checkra1n undermines the trust of the iOS secure boot chain and will allow attackers to gain easy access and privilege escallation on your device. My recommendation for all of you who wonder how they can protect themself is, if you can afford it, get an iOS Device with an A12 CPU or higher. As another countermeasure restart your device every time after you have left it unattended.  
+On top of this checkra1n is a semi-tethered jailbreak which means that it only persists until the next reboot of the device which makes it easy to remove but as well anoying when you have to reboot your device.
 
 ![News report: iPhone Jailbreak by Florian Wagner]({{ site.url }}/assets/article2/iPhoneInJail.png){: .center-image}  
 
@@ -41,6 +42,7 @@ On native macOS you will not have any problem to follow my instructions. On Linu
 * checkra1n is a semi-tethered jailbreak variant which means that it will last until the device restarts.
 * Take note that jailbreaking your iOS device with this method can be reversed but that I will not take any responsibility for any damage to your devices that might occure. Do your research aside from this article and make sure that you understand what you do before taking any action.
 * All techniques provided in my articles are solely meant for ethical hacking, educational purposes or personal use. 
+* **Please be aware that a failure while jailbreaking your device can damage your device permanently and irreversably!**  
 
 # Jailbreaking iOS 12.0-14.7.1 with checkra1n
 
@@ -119,6 +121,8 @@ Congratulations to your jailbroken iDevice!
 ---
 Thank you very much for reading this article and feel free to tell me if you agree or disagree. Subscribe and share!
 If you want to read my opinion about hacking iOS apps, visit my first article ["Hacking Mobile Apps - easier done than said!"][easierDoneThanSaid].
+
+P.S. Many thanks to Daniel and my wife Morgan for copy editing this article. They helped me to deliver you a good reading experience. You are awesome!
 
 All the best,  
 Florian
