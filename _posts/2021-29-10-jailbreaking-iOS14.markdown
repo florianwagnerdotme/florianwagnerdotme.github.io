@@ -6,7 +6,7 @@ categories: mobile app hacking, iOS hacking
 ---
 Like my [introduction article][easierDoneThanSaid] said, the following will get you started with hacking iOS Apps. First things first, to  get started you will need something to install and test your app of choice. While on Android there are emulators that are emulating CPU instruction sets very well and allow an almost native experience in comparison to a real Android device this is different on iOS. The only company I am aware of that is offering a remote connection to an iOS virtual device is [Corellium][corellium]. I personally have not tried their services that is why I can´t tell you if their virtual iOS experience has any downfalls in terms of security tests. I could imagine that a virtual iOS environment can be very interesting and useful for security automation.    
 My recommendation is to start by using a real iOS device.  
-Due to the long support of devices by Apple it is very easy to get your hands on a test device. For this, I would recommend you to buy a **used** iPhone between iPhone 6s to iPhone X or the iPad equivalent with an installed software version in between iOS 12.0 to 14.7.1. Maybe you even hoard your old iPhone somewhere - then get it out now! :iphone:  
+Due to the long support of devices by Apple it is very easy to get your hands on a test device. For this, I would recommend you to buy a **used** iPhone between iPhone 6s to iPhone X or the iPad equivalent with an installed software version in between iOS 12.0 to 14.7.1. Maybe you even hoard your old iPhone somewhere - then get it out now!
 
 Why these recommendations?  
   
@@ -116,7 +116,7 @@ Step 20: Open your newly installed checkra1n app. This verifies a successful ins
 
 ![checkra1n Options]({{ site.url }}/assets/article2/15checkra1nAppOpened.png){: .center-image}  
 
-**Congratulations on jailbreaking your :iphone:!** :confetti_ball: :trophy: :tada:
+**Congratulations on jailbreaking your iDevice!** 🎉📱🏆🎊
 
 ---
 Thank you very much for reading this article and feel free leave a comment. Subscribe and share!
