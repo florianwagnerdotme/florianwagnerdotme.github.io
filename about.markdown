@@ -26,6 +26,8 @@ permalink: /about/
 
 ---------
 
+### CONTACT ME  
+
 Please feel free to write me if you have any comments, questions or you just want to say "hello". You can find my contact information down below.  
   
 Until then, I hope you are doing well!
