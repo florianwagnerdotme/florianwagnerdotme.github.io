@@ -19,7 +19,7 @@ permalink: /about/
 ### PURPOSE OF THIS SITE
 
 * reaching out
-* to help businesses, people and ethical hackers
+* help businesses, people and ethical hackers
 * spreading knowledge
 * beeing inspirational
 * contributing to a safer IT world
