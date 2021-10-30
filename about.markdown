@@ -5,6 +5,13 @@ permalink: /about/
 ---
 ### WHOAMI
 ![profile photo]({{ site.url }}/assets/about/profilePhoto.jpg){: .image-left}  
+* Florian Wagner
+* Cyber Security Professional 
+* Living in the Kotor Bay Area
+* Started with Security in 2016 at Deutsche Telekom
+* Worked as a Project Security Manager and Ethical Hacker
+* Passion for mobile ecosystem security and web security
+
 My name is Florian Wagner and I'm an information security professional with a passion for penetration testing living in the Kotor Bay Area.   
 I started this site in 2021 but my professional security education and experience began at Deutsche Telekom in 2016 where I have worked both as a Project Security Manager and a Penetration Tester during that time.  
 I have always been focued and very interested in security surrounding mobile devices, their eco systems, the mobile network and the billion mobile apps out there used by people.  
