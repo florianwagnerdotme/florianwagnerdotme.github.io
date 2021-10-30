@@ -12,8 +12,8 @@ Furthermore bug bounty programs are an excellant place to further practise the s
   
 To analyze and consult businesses and people in terms of security it is necessary to be able to understand and think like an attacker - to create a reasonable defense strategy you have to master attacking. A very fitting quote in this regard is the following:  
   
-*"Attack is the secret of defence; defence is the planning of an attack"*  
-*- Chun Yu's comment on Sun Tsu's ART of WAR (3/18)*
+> Attack is the secret of defence; defence is the planning of an attack  
+*Chun Yu's comment on Sun Tsu's ART of WAR (3/18)*
 
 ### [Hack The Box](https://www.hackthebox.eu/)  
 #### Optimum - easy
