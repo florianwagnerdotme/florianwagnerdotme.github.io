@@ -9,10 +9,10 @@ permalink: /about/
 * Florian Wagner
 * CEO of Wagner White Hat Hacking
 * Living in the Kotor Bay Area
-* Worked as a Project Security Manager and Ethical Hacker
-* for Deutsche Telekom from 2016-2021
-* Cyber Security Professional with a 
-* passion for mobile device and web security
+* Worked as a Project Security Manager and Ethical Hacker  
+for Deutsche Telekom from 2016-2021
+* Cyber Security Professional with a  
+passion for mobile device and web security
 
 ---------  
 
