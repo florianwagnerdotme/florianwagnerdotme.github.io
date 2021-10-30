@@ -38,7 +38,7 @@ On native macOS you will not have any problem to follow my instructions. On Linu
 * If you do this with an iPhone 8s up to the iPhone X you have to activate the "Skip A11 BPR check" before starting the Jailbreak process (open the checkra1n app --> Options --> activate "Skip A11 BPR check").
 * Make sure that your phone has enough charge before you try this - 50% should be enough.
 * Prior execution of the steps below make sure that you deactivate the pin/passcode/touchID/FaceID login.
-* Again, please do not use your iDevice with pernal data for this. Jailbreaking your iDevice removes important security restrictions!
+* Again, please do not use your iDevice with personal data for this. Jailbreaking your iDevice removes important security restrictions!
 * Checkra1n is a semi-tethered jailbreak variant which means that it will last until the device restarts.
 * Take note that jailbreaking your iOS device with this method can be reversed but that I will not take any responsibility for any damage to your devices that might occure. Do your research aside from this article and make sure that you understand what you do before taking any action.
 * All techniques provided in my articles are solely meant for ethical hacking, educational purposes or personal use. 
