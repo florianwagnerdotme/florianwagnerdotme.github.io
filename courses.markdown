@@ -39,6 +39,13 @@ The presenter bears no responsibility for how the information is used within thi
 
 ---------
 
+### Course price:
+# **COURCE PRICE**: 360.00 € / person
+##*Refer tree people and get up to 30% off!`*`*
+`*`*This applies only if the refered people attend the course. This offer gives you a maximum of 30% off for finding 3 other people to take the course with, hence 10% off per person.*
+
+---------
+
 ### CONTACT ME  
 Please feel free to write me if you have any questions or you want to register. You can find my contact information down below and above in the course flyer.
   
