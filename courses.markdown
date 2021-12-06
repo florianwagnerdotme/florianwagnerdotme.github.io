@@ -41,7 +41,7 @@ The presenter bears no responsibility for how the information is used within thi
 
 ### Course price:
 
-![coursePicture]({{ site.url }}/assets/courses/ethicalHacking101CoursePrice.png){: .center-image}  
+![coursePriceEthicalHacking101]({{ site.url }}/assets/courses/ethicalHacking101CoursePrice.png){: .center-image}  
 
 ---------
 
