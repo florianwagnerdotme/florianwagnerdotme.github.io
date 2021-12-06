@@ -7,11 +7,7 @@ categories: mobile app hacking
 With people spending a [larger percentage][timeSpentOnline] of their time on their mobile phones than they do on their desktop/laptop there is an increasing market for hackers to steal data, surveil people, compromise bank accounts and many more threats. Millions of new app releases within Apple's App Store and Google's Play Store occur every day, which will impact mobile devices of businesses and casual users alike. While businesses attempt to deal with these issues by using a so called [Mobile Device Management][mdm] system to deploy endpoint security mechanisms to protect against these threats on their devices, people like you and me (at least privately) are dependent on the security patches of mostly Apple, Google and the developers of the mobile apps we use.       
 I would say it is far more likely that you get digitally robbed by some hackers than being robbed physically on the street. In most cases it is easier too. It can happen everywhere and at any time. Especially if you are [using Apple Pay][applePayRobbery] with a VISA card right now. ;-)  
 But, why is that so?  
-Well, today everything has to be online, quickly available and easy to use with the tiny computers that we are carrying around every day, everywhere we go **PERIOD** - if it makes sense or not. I would rather like to have some of the following security features than some apps out there, what do you think :-) ? 
-  
-![phone security by XKCD]({{ site.url }}/assets/phone_security.png){: .center-image}
-
-[from XKCD](https://xkcd.com/1934/) - CC BY-NC 2.5, 04/10/21  
+Well, today everything has to be online, quickly available and easy to use with the tiny computers that we are carrying around every day, everywhere we go **PERIOD** - if it makes sense or not. 
 
 # About Mobile App Security and Data Privacy
 
