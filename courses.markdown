@@ -30,18 +30,18 @@ Besides being an ethical hacker, IT security expert and CEO of my cyber security
 Previously, I worked for several years at a German telecom provider in which I performed web and mobile security penetration tests for different clients. I also managed large projects like the Corona Warn App, the European Federation Gateway Service (EFGS) and Mobile Connect (GSMA) as a project security manager. Thus, I can now look back on 6 years of security experience. Furthermore, I am a Certified Cyber Security Professional (IHK). 
 My mission is to provide frameworks, tools and services to improve the information security of companies and people around the world.
 
+---------
+
+### Course price:
+
+![coursePriceEthicalHacking101]({{ site.url }}/assets/courses/ethicalHacking101CoursePrice.png){: .center-image}  
+
 ---------  
 
 ### Disclaimers:
 The knowledge imparted in this course to the student is for educational purposes only. All attack types demonstrated 
 Were performed only with prior approval. Penetration testing is an agreed upon form of audit between two parties. Both parties should always define the scope of a penetration test in writing prior to the penetration test. 
 The presenter bears no responsibility for how the information is used within this course.   
-
----------
-
-### Course price:
-
-![coursePriceEthicalHacking101]({{ site.url }}/assets/courses/ethicalHacking101CoursePrice.png){: .center-image}  
 
 ---------
 
