@@ -39,7 +39,7 @@ My mission is to provide frameworks, tools and services to improve the informati
 ---------  
 
 ### Disclaimers:
-The knowledge imparted in this course to the student is for educational purposes only. All attack typed demonstrated were performed only with prior permission. Penetration testing is an agreed upon form of audit between two parties. Both parties should always define the scope of a penetration test in writing prior to the penetration test. 
+The knowledge imparted in this course to the student is for educational purposes only. All attack typed demonstrated were performed only with prior permission. Penetration testing is an agreed form of audit between two parties. Both parties should always define the scope of a penetration test in writing prior to the penetration test. 
 The presenter bears no responsibility for how the information is used within this course by the student. 
 
 ---------
