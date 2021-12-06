@@ -15,7 +15,7 @@ The lessons can be held either in English or in German (the teaching material is
 
 ---------  
 
-### Course Requirements:
+### Course requirements:
 
 * Basic IT understanding
 * Laptop or PC for online course participation 
