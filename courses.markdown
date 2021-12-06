@@ -15,19 +15,6 @@ The lessons can be held either in English or in German (the teaching material is
 
 ---------  
 
-### Course content:
-
-* Course Introduction
-* Introduction to Penetration Testing and Methodology
-* Introduction to Kali Linux 
-* Practical Hacker Tools
-* Network and vulnerability scanners in use
-* Hacking web applications
-* Tips for further self-study 
-* Q&A
-
----------  
-
 ### Course Requirements:
 
 * Basic IT understanding
@@ -53,9 +40,7 @@ The presenter bears no responsibility for how the information is used within thi
 ---------
 
 ### CONTACT ME  
-
-Please feel free to write me if you have any questions or you want to register. You can find my contact information down below.  
-Furthermore you can contact me via mobile messaging (Signal, Whatsapp, Viber) under 00 382 67 119604.
+Please feel free to write me if you have any questions or you want to register. You can find my contact information down below and above in the course flyer.
   
 Until then, I hope you are doing well!
 
