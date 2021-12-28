@@ -42,6 +42,8 @@ Checkpoint has measured over 800.000 attacks only from the December 9th to 13th 
 2. Remember, if you make use of open source software, then contribute back next time. Even a coffee donation of 2$ could help these people to provide secure and good software for everyone. 
 3. The best recommendation: Learn from it! Most businesses do not know how to value the importance of Cyber Security in our world and the risk involved until something happens. 
 
+---
+
 If you have any questions feel free to contact me. You find my contact details below.
 May Log4Shell not affect you, Merry Christmas and a Happy New Year!
 
