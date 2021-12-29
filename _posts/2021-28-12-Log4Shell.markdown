@@ -25,7 +25,7 @@ Exactly these logs are now affected by a security vulnerability that allows an a
 
 [Since December 1st][Log4ShellFirstEncounter] this vulnerability is actively being used to hack systems around the globe and yours could be the next.
 Since the public disclosure the Maritime Sustainment Technology and Innovation Consortium [(MSTIC) reported][MSTICNationalStateActivityGroups] that nation state activity groups from China, Iran, North Korea, and Turkey are focusing on hacking vulnerable systems now. 
-Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading if you want to learn more [here][cyberPandemic].
+Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading, if you want to learn more, [click here][cyberPandemic].
 
 # Recommended actions to take:
 
