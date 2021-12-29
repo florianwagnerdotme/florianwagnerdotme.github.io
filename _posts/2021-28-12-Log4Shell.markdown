@@ -12,7 +12,7 @@ In the following ~5min read I will elaborate on what actions businesses have to 
 
 ![IgnoreLog4j: I want to have holidays!]({{ site.url }}/assets/article3/log4jArticlePic.png){: .center-image}  
 
-"Log4j comic" illustrated by Florian Wagner - [CC BY-NC-ND 4.0][cc] 27/10/21  
+"Log4j comic" illustrated by Florian Wagner - [CC BY-NC-ND 4.0][cc] 27/12/21  
 
 # So in short, what the Log4j and why do I want to raise your awareness about this?
 
@@ -25,7 +25,7 @@ Exactly these logs are now affected by a security vulnerability that allows an a
 
 [Since December 1st][Log4ShellFirstEncounter] this vulnerability is actively being used to hack systems around the globe and yours could be the next.
 Since the public disclosure the Maritime Sustainment Technology and Innovation Consortium [(MSTIC) reported][MSTICNationalStateActivityGroups] that nation state activity groups from China, Iran, North Korea, and Turkey are focusing on hacking vulnerable systems now. 
-Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading if you want to learn more: https://blog.checkpoint.com/2021/12/13/the-numbers-behind-a-cyber-pandemic-detailed-dive/
+Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading if you want to learn more [here][cyberPandemic].
 
 # Recommended actions to take:
 
@@ -56,6 +56,7 @@ Florian 
 [MSTICNationalStateActivityGroups]: https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation
 [holidayHacks]: https://www.cisa.gov/uscert/ncas/current-activity/2021/11/22/reminder-critical-infrastructure-stay-vigilant-against-threats
 [cc]: https://creativecommons.org/licenses/by-nc-nd/4.0/
+[cyberPandemic]: https://blog.checkpoint.com/2021/12/13/the-numbers-behind-a-cyber-pandemic-detailed-dive/
 
 <style>
 .center-image
