@@ -20,6 +20,7 @@ To analyze and consult businesses and people in terms of security it is necessar
 I just started to do HTB active machines as part of a new habit of mine. Every day I will work on HTB for the next month and display my progress and my throughts in regard to the boxes I have done. My goal is to move from the EASY machines bit by bit towards INSANE.  
 
 > Current Rank: NOOB and 66,6% towards Script Kiddie
+
 > Ownership: 3,33% of HTB pwned
 
 #### Optimum - easy
@@ -41,8 +42,8 @@ After finding an information disclosure I was able to retreive a DB account and 
 
 Tools used:
 - [AutoRecon](https://github.com/Tib3rius/AutoRecon)
-- [Burp Suite Community Edition] (https://portswigger.net/burp/communitydownload)
-- [hashcat] (https://hashcat.net/hashcat/)
+- [Burp Suite Community Edition](https://portswigger.net/burp/communitydownload)
+- [hashcat](https://hashcat.net/hashcat/)
 - diverse UNIX CLI tools
 
 <style>
