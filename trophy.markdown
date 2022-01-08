@@ -36,8 +36,8 @@ Tools used:
 - diverse UNIX CLI tools
 
 #### Previse - easy
-With some fiddeling around with the  website and HTTP status codes I was able to create myself a user. This took me some time because I was thinking to complicated. 
-Note for my future self: Think simple 
+With some fiddeling around with the website and HTTP status codes I was able to create myself a web user. This took me some time because I was thinking to complicated.   
+Note for my future self: Think simple!    
 After finding an information disclosure I was able to retreive a DB account and was able to detect a flaw in how the PHP code handles a function. This lead to a manual exploitable RCE. After abusing the RCE to get a service level reverse shell a little research on the system  with the already disclosed information and password cracking gave me user access via ssh. Finally, enumeration showed me the $PATH to gain full admin level access to the machine.
 
 Tools used:
