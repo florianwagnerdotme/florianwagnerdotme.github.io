@@ -1,0 +1,32 @@
+- name: External Penetration Testing
+  link: http://localhost:4000/externalPenetrationTesting
+  image: https://cdn.pixabay.com/photo/2015/08/29/20/21/safe-913452_1280.jpg
+  description: An External Penetration Test is an outsider attack emulation by an Ethical Hacker. The goal is to gain access to internal resources without insider knowledge and emulate a real Hacker attack on your systems visible and accessible from the Internet. To archive this goal our Ethical Hacker will use Open-Source Intelligence (OSINT) together with vulnerability scanning and other hacking techniques to gather sensitive information of the exposed target. The goal of this engagement is to gain access through exploitation attempts of the found vulnerabilities and enumerate as far as possible. 
+- name: Internal Penetration Testing
+  link: http://localhost:4000/internalPenetrationTesting
+  image: https://cdn.pixabay.com/photo/2016/01/16/23/47/vault-1144249_1280.jpg
+  description: An internal Penetration Test is an attack emulation from within your company’s network by an Ethical Hacker. To determine the posture of your internal network and the potential damage of a hacking attack, the goal of this penetration test is to gain access to your host systems and internal resources. To achieve this goal of compromising hosts, our Ethical Hacker will use internal vulnerability scanning, common and advanced hacking techniques to emulate an attack. Furthermore, the Ethical Hacker will attempt to move lateral within your network and enumerate as far as possible. 
+- name: Mobile Penetration Testing
+  link: http://localhost:4000/mobilePenetrationTesting
+  image: https://cdn.pixabay.com/photo/2016/03/20/22/27/phone-1269597_1280.jpg
+  description: A Mobile Penetration Test is a security evaluation of an iOS or Android app by an Ethical Hacker. The goal of this attack emulation is to find weak implementations or sensitive information that could be misused by an attacker in a harmful manner. Without or with insider knowledge our Penetration Tester will use static and dynamic analysis to identify vulnerabilities in the mobile application. Based on the current OWASP Mobile Top 10 vulnerabilities and common and advanced mobile application attacks a security assessment will uncover the weaknesses and attack vectors of the mobile application. In addition to analyzing the mobile application the Security Evaluation can be extended to the backend of the application or reverse engineering the app’s binary (code review). 
+- name: Web Penetration Testing
+  link: http://localhost:4000/webPenetrationTesting
+  image: https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140604_1280.jpg
+  description: A Web Application Penetration Test determines the security posture of your website(s). The goal of this attack emulation is to gain access to the webserver or exfiltrate sensitive information. Through an unauthenticated or authenticated analysis of the website(s) and manual penetration testing our Ethical Hacker identifies vulnerabilities and weak security implementations. This includes security scanning and mapping of network communications, enumeration of vulnerabilities, execution of injection attack emulation as well as fuzzing. Based on the current OWASP Web Top 10 vulnerabilities the security assessment attempts to uncover as many attack vectors as possible.  
+- name: Vulnerability Scanning
+  link: http://localhost:4000/vulnerabilityScanning
+  image: https://cdn.pixabay.com/photo/2013/07/18/10/59/pulse-trace-163708_1280.jpg
+  description: A good start to evaluate the cyber security of your company are recurring security Vulnerability Scans. The goal of these scans is to determine the overall cyber security posture of your external available systems on the internet. The repetition makes sure that new vulnerabilities are found, and your system stays secure over time. An Ethical Hacker will execute vulnerability scans and find known vulnerabilities without making manual exploitation attempts. At the end of each assessment a quality vulnerability report with remediation suggestions will be delivered to the client as a PDF file via email.  
+- name: Cyber Security Management and Advice
+  link: http://localhost:4000/securityManagementAndAdvice
+  image: https://cdn.pixabay.com/photo/2018/04/16/15/52/chess-3325010_1280.jpg
+  description: We offer security management on every level from projects, DevOps to advising the CEO, CISO or COO of your company. This can include security threat modeling, the organization of penetration testing engagements, evaluation of vulnerabilities and cyber security policy creation and review. We offer you a tailored solution to your problem that fits perfectly to your needs. Feel free to reach out to us that we can start discussing your questions and problem.  
+- name: Cyber Security Awareness Training 
+  link: http://localhost:4000/awarenessTraining
+  image: https://cdn.pixabay.com/photo/2022/01/10/10/36/brain-6927977_1280.png
+  description: We offer one time or recurring Online Cyber Security Awareness Training(s) for employees or management personal. This includes the education on typical social engineering attacks and how to prevent being a victim. On request we offer as well demonstrational hacking of real hacking techniques. Prevent fraud through knowledge and habit building. 
+- name: Ethical Hacking 101 Course available soon!
+  link: http://localhost:4000/#contact
+  image: https://cdn.pixabay.com/photo/2017/09/02/11/04/adult-education-2706977_1280.jpg
+  description: We offer a 6-hours long introduction course to Penetration Testing and its methodology. The goal of this course is to give the student a starting point to pursue the job of an Ethical Hacker. This includes a demonstration of Kali Linux, the mostly used hacking tools and introduced to web application attacks (OWASP Top 10). Finally, the Ethical Hacking tutor will share tips and trick with the students to self-study, pursue a career in the Cyber Security field and have a Q&A session. 

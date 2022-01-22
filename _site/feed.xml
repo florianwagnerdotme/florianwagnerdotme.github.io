@@ -1,66 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>FLORIAN WAGNER</title>
-    <description>Greetings,  My name is Florian Wagner and I'm a passionate Security Consultant and White Hat Hacker living in the Kotor Bay Area in Montenegro. My mission is to provide frameworks, tools and services to increase the information security posture of businesses and people around the world.</description>
-    <link></link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    
-      <item>
-        <title>Hacking Mobile Apps - easier done than said!</title>
-        <description>&lt;p&gt;With people spending a &lt;a href=&quot;https://www.statista.com/statistics/319732/daily-time-spent-online-device/&quot;&gt;larger percentage&lt;/a&gt; of their time on their mobile phones than they do on their desktop/laptop there is an increasing market for hackers to steal data, surveil people, compromise bank accounts and many more threats. Millions of new app releases within Apple’s App Store and Google’s Play Store occur every day, which will impact mobile devices of businesses and casual users alike. While businesses attempt to deal with these issues by using a so called &lt;a href=&quot;https://en.wikipedia.org/wiki/Mobile_device_management&quot;&gt;Mobile Device Management&lt;/a&gt; system to deploy endpoint security mechanisms to protect against these threats on their devices, people like you and me (at least privately) are dependent on the security patches of mostly Apple, Google and the developers of the mobile apps we use.     &lt;br /&gt;
-I would say it is far more likely that you get digitally robbed by some hackers than being robbed physically on the street. In most cases it is easier too. It can happen everywhere and at any time. Especially if you are &lt;a href=&quot;https://thehackernews.com/2021/10/apple-pay-can-be-abused-to-make.html&quot;&gt;using Apple Pay&lt;/a&gt; with a VISA card right now. ;-)&lt;br /&gt;
-But, why is that so?&lt;br /&gt;
-Well, today everything has to be online, quickly available and easy to use with the tiny computers that we are carrying around every day, everywhere we go &lt;strong&gt;PERIOD&lt;/strong&gt; - if it makes sense or not. I would rather like to have some of the following security features than some apps out there, what do you think :-) ?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-22T15:38:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wagner White Hat Hacking</title><subtitle>Our mission is to inspire with passion for Cyber Security and project this passion onto everything we do and offer. TRUST US and we will focus with a burning passion to find the needle in your NEEDLEstack!</subtitle><entry><title type="html">Log4Shell, the risks and what to do now!</title><link href="http://localhost:4000/blog/Log4Shell" rel="alternate" type="text/html" title="Log4Shell, the risks and what to do now!" /><published>2021-12-28T00:00:00+01:00</published><updated>2021-12-28T00:00:00+01:00</updated><id>http://localhost:4000/blog/Log4Shell</id><content type="html" xml:base="http://localhost:4000/blog/Log4Shell"><![CDATA[<p>Log4J? Cyber Pandamic? I noticed that many people I talk to have never heard about it, and this is why I want to show you how the software “Log4j” can fail your company and how you can prevent your assets from being in danger by taking action now! <br />
+Building awareness and a feeling for Cyber Security is important for every business owner and us as private people alike.</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/phone_security.png&quot; alt=&quot;phone security by XKCD&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+<p>In the following article I will elaborate on what actions businesses have to takle immediately, to not be out of business soon.</p>
 
-&lt;p&gt;&lt;a href=&quot;https://xkcd.com/1934/&quot;&gt;from XKCD&lt;/a&gt; - CC BY-NC 2.5, 04/10/21&lt;/p&gt;
+<p><img src="http://localhost:4000/assets/images/Log4ShellArticle/log4jArticlePic.png" alt="IgnoreLog4j: I want to have holidays!" class="center-image" /></p>
 
-&lt;h1 id=&quot;about-mobile-app-security-and-data-privacy&quot;&gt;About Mobile App Security and Data Privacy&lt;/h1&gt;
+<p>“Log4j comic” illustrated by Florian Wagner - <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> 27/12/21</p>
 
-&lt;p&gt;Out of my experience, the current overall security and data privacy state of iOS and Android Apps is disappointing. If you look into apps for a couple of hours you will often see insecure communication and cookies, leaked authorization data, outdated library usage and privacy violation issues.&lt;br /&gt;
-Most of these problems could be addressed already during the initial management phases and planned out as a “security by design” paradigm.
-Then, if you go for a deep dive into network and dynamic analysis of the app you will find even scarier things lurking in the deep which are either listed within the &lt;a href=&quot;https://owasp.org/www-project-mobile-top-10/&quot;&gt;OWASP Mobile Top 10&lt;/a&gt; or the &lt;a href=&quot;https://owasp.org/www-project-top-ten/&quot;&gt;OWASP Web Top 10&lt;/a&gt; security vulnerabilities. The reason why there are mostly web vulnerabilities found is that most apps make use of Web Views which are available for both &lt;a href=&quot;https://developer.apple.com/design/human-interface-guidelines/ios/views/web-views/&quot;&gt;iOS&lt;/a&gt; and &lt;a href=&quot;https://developer.android.com/guide/webapps/webview&quot;&gt;Android&lt;/a&gt;. They make a cross platform development for apps easier with the negative effect that an improper configuration of them can lead to severe security vulnerabilities due to web vulnerabilities. 
-Furthermore, most mobile apps rely on user tracking to make money which is, out of a business point of view, ok, &lt;strong&gt;but&lt;/strong&gt; from my point of view they must always:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Inform the user before gathering the user’s behaviour to make money.&lt;/li&gt;
-  &lt;li&gt;Never violate any local applicable law, like GDPR in Europe.&lt;/li&gt;
-  &lt;li&gt;At best give the user an option to opt out the tracking when the user first opens the app.&lt;/li&gt;
-&lt;/ol&gt;
+<h1 id="so-in-short-what-the-log4j-and-why-do-i-want-to-raise-your-awareness-about-this">So in short, what the Log4j and why do I want to raise your awareness about this?</h1>
 
-&lt;p&gt;In conclusion, for our society mobile security is one of the most important fields of security that is out there. Security flaws in standards and vulnelrabilities in software are impacting everyone, from businesses to private people. The “security by design” paradigm should be followed and used as early in the planning phase of an app as possible.&lt;/p&gt;
+<p>Log4j is a logging component in software that allows you to write away events that seem important. Logging intentionally is there to give the IT team an inside into how your software or piece of technology is running in production.
+Furthermore, logs are used for forensic analysis after a cyber attack to identify what happened and ideally to have hints to who attacked you and how.
+Exactly these logs are now affected by a security vulnerability that allows an attacker to craft a malicious text and send it to your vulnerable software, either by just injecting it into a form field within your application or sending a HTTP request over the internet.
+<strong>An attacker who uses this vulnerability, called <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228">Log4Shell</a>, can get sensitive information out of your systems and even take over the system that is vulnerable. After this an attacker is able to do everything from attacking more systems in your network, spying on you, stealing your data or applying a worm and encrypting everything like it happened in 2017 with <a href="https://www.cisa.gov/uscert/sites/default/files/FactSheets/NCCIC%20ICS_FactSheet_WannaCry_Ransomware_S508C.pdf">WannaCry</a>.</strong></p>
 
-&lt;h1 id=&quot;education-is-the-key-to-unlock-the-golden-door-of-freedom&quot;&gt;“Education is the key to unlock the golden door of freedom.”&lt;/h1&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;George Washington Carver&lt;/p&gt;
-&lt;/blockquote&gt;
+<h1 id="is-there-evidence-of-systems-being-attacked">Is there evidence of systems being attacked?</h1>
 
-&lt;p&gt;I have spent the last 6 years dealing with security issues surrounding mobile devices, mobile operating systems and their mobile apps. Within the last year I did a deep dive into the practise of hacking these mobile device’s, apps and features to find security issues and report them to contribute to the mobile security field.&lt;/p&gt;
+<p><a href="https://twitter.com/eastdakota/status/1469800951351427073?s=21">Since December 1st</a> this vulnerability is actively being used to hack systems around the globe and yours could be the next.
+Since the public disclosure the Maritime Sustainment Technology and Innovation Consortium <a href="https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation">(MSTIC) reported</a> that nation state activity groups from China, Iran, North Korea, and Turkey are focusing on hacking vulnerable systems now. 
+Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading, if you want to learn more, <a href="https://blog.checkpoint.com/2021/12/13/the-numbers-behind-a-cyber-pandemic-detailed-dive/">click here</a>.</p>
 
-&lt;p&gt;While Apple, Goggle and most developers try to keep up to date with the webb and flow of security issues along with their fixes, there is still a lot to do to keep hackers from abusing their power for evil purposes.&lt;br /&gt;
-Because all help in my field of expertise is welcome and needed, I will soon publish open source tools and articles on how to start with the mobile hacking of apps and the identification of security issues within mobile devices. Like in George Washington Carver’s quote, knowledge and continuous education will give freedom to those who seek it. &lt;br /&gt;
-While freedom is objective please keep care, once you start down the dark path it will forever dominate your destiny. Choose the right one and contribute to the security of everyone.&lt;/p&gt;
+<h1 id="recommended-actions-to-take">Recommended actions to take:</h1>
 
-&lt;hr /&gt;
-&lt;p&gt;Thank you very much for reading my first article and feel free to tell me if you agree or disagree. Subscribe and share!&lt;/p&gt;
+<p>First and foremost, ask yourself and your IT team: Are we vulnerable?</p>
+<ol>
+  <li>Speak to your IT team and see if they know about this. If not, make them aware!</li>
+  <li>Do you have a software asset register? —&gt; See if you use software that makes use of Log4j.</li>
+  <li>Hire a penetration tester to find your vulnerable systems and make sure they are fixed properly.</li>
+  <li>Apply the Log4j 2.15.0 and the upcoming 2.16.0 patch as soon as possible.</li>
+  <li>Make sure to apply patches to other software that is used in your company. If a software patch is release in the next couple of days it is probably to fix Log4j in that software.</li>
+</ol>
 
-&lt;p&gt;All the best,&lt;br /&gt;
-Florian&lt;/p&gt;
+<h1 id="other-things-to-consider">Other things to consider:</h1>
 
-&lt;style&gt;
+<ol>
+  <li>Don’t let your guards down for the holidays, this is the opportunity for hackers and they will not miss it! Even <a href="https://www.cisa.gov/uscert/ncas/current-activity/2021/11/22/reminder-critical-infrastructure-stay-vigilant-against-threats">America’s CISA</a> put out a warning over the holidays for businesses.</li>
+  <li>Remember, if you make use of open source software, then contribute back next time. Even a coffee donation of 2$ could help these people to provide secure and good software for everyone.</li>
+  <li>The best recommendation: Learn from it! Most businesses do not know how to value the importance of Cyber Security in our world and the risk involved until something happens.</li>
+</ol>
+
+<hr />
+
+<p>If you have any questions feel free to contact me. You find my contact details below.<br />
+May Log4Shell not affect you, Merry Christmas and a Happy New Year!</p>
+
+<p>All the best,<br />
+Florian </p>
+
+<style>
 .center-image
 {
     margin: 0 auto;
     display: block;
 }
-&lt;/style&gt;
+</style>]]></content><author><name></name></author><category term="vulnerability" /><category term="Log4j" /><category term="security awareness" /><category term="business security" /><summary type="html"><![CDATA[Log4Shell is a Security Vulnerability in the Log4J software and started the Cyber Pandamic which impacts anything and anyone since December 2021.]]></summary></entry><entry><title type="html">iOS app hacking - JailBreak your iPhone!</title><link href="http://localhost:4000/blog/jailbreaking-iOS14" rel="alternate" type="text/html" title="iOS app hacking - JailBreak your iPhone!" /><published>2021-10-29T00:00:00+02:00</published><updated>2021-10-29T00:00:00+02:00</updated><id>http://localhost:4000/blog/jailbreaking-iOS14</id><content type="html" xml:base="http://localhost:4000/blog/jailbreaking-iOS14"><![CDATA[<p>Like my <a href="http://localhost:4000/blog/iOS-App-Penetration-Testing">introduction article</a> said, the following will get you started with hacking iOS Apps. First things first, to  get started you will need something to install and test your app of choice. While on Android there are emulators that are emulating CPU instruction sets very well and allow an almost native experience in comparison to a real Android device this is different on iOS. The only company I am aware of that is offering a remote connection to an iOS virtual device is <a href="https://www.corellium.com/?ref=himalayas.app">Corellium</a>. I personally have not tried their services that is why I can´t tell you if their virtual iOS experience has any downfalls in terms of security tests. I could imagine that a virtual iOS environment can be very interesting and useful for security automation.  <br />
+My recommendation is to start by using a real iOS device.<br />
+Due to the long support of devices by Apple it is very easy to get your hands on a test device. For this, I would recommend you to buy a <strong>used</strong> iPhone between iPhone 6s to iPhone X or the iPad equivalent with an installed software version in between iOS 12.0 to 14.7.1. Maybe you even hoard your old iPhone somewhere - then get it out now!</p>
 
-</description>
-        <pubDate>Fri, 15 Oct 2021 12:00:00 +0200</pubDate>
-        <link>//mobile/app/hacking/2021/10/15/iOS-App-Penetration-Testing.html</link>
-        <guid isPermaLink="true">//mobile/app/hacking/2021/10/15/iOS-App-Penetration-Testing.html</guid>
-      </item>
-    
-  </channel>
-</rss>
+<p>Why these recommendations?</p>
+
+<ol>
+  <li>iPhones and iPads are easy and cheap to get online, especially used (you get the iPhone 6s from 30-100 bucks).</li>
+  <li>The easiest and most reliable jailbreak currently available works on them (see <a href="https://checkra.in/">checkra1n</a>).</li>
+  <li>You do something good for the environment in reusing an old device and giving it a new purpose. ;-)</li>
+  <li>With a buyers/sellers contract you can even take used devices off your taxes (e.g. for an educational purpose).</li>
+</ol>
+
+<p>While checkra1n has many advantages for security researchers and penetration testers it is <strong>NOT recommended</strong> to install any jailbreak on your primary device. <strong>Jailbreaking your device will remove main security restrictions by Apple</strong> and makes hacking your device much easier. Checkra1n undermines the trust of the iOS secure boot chain and will allow attackers to gain easy access and privilege escallation on your device. My suggestion for all of you who wonder how they can protect themselves is, if you can afford it, get an iOS Device with an A12 CPU or higher. As another countermeasure restart your device every time after you have left it unattended.</p>
+
+<h1 id="checkra1n-a-remarkable-jailbreak"><a href="https://checkra.in/">checkra1n</a>, a remarkable jailbreak</h1>
+
+<p>The jailbreak we will use to break free our iDevice of choice is checkra1n. Like mentioned, checkra1n is one of the easiest and most reliable jailbreaks ever released. Its base is a bug found within the Boot ROM (aka SecureROM), the first code that is running when starting up an iOS device. Because of this, and the fact that the Boot ROM is designed to be read only, Apple is and will never be able to patch this bug within the vulnerable devices.<br />
+On top of this checkra1n is a semi-tethered jailbreak which means that it only persists until the next reboot of the device which makes it easy to remove but also annoying when you have to reboot your device.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/iPhoneInJail.png" alt="News report: iPhone Jailbreak by Florian Wagner" class="center-image" /></p>
+
+<p>“News report: iPhone Jailbreak” illustrated by Florian Wagner - <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> 27/10/21</p>
+
+<h1 id="requirements-to-use-the-checkra1n-jailbreak">Requirements to use the checkra1n jailbreak</h1>
+
+<p>To jailbreak your iOS device you will need a notebook or desktop PC with Linux or macOS ready to go. MS Windows is currently not supported by the checkra1n authors. I would recommend you either try to execute the script with the <a href="https://docs.microsoft.com/en-us/windows/wsl/about">Windows Subsystem for Linux</a> (I have never tested this) or to create a bootable usb stick with e.g. <a href="https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview">Ubuntu</a> and execute checkra1n from the live system. Due to the handling of USB devices in virtual machines, jailbreaking your iDevice will not work out of a Linux/macOS virtual machine.
+On native macOS you will not have any problem to follow my instructions. On Linux you have to download the bash script and run it within the CLI (don`t forget to give it execution permissions ;-). For an easier follow along I have listed the steps to jailbreak your iPhone/iPad below. What I show you has been successfully tested on my Macbook with macOS Monterey 12.0.1 and my iPhone 6s with iOS 14.7.1 installed.</p>
+
+<h1 id="hints-and-disclaimer">Hints and disclaimer:</h1>
+
+<ul>
+  <li>You will need an original Apple cable (USB-A on one side and Lightning on the other) to directly connect your iPhone/iPad to your computer (USB-C on one and Ligtning on the other did not work for me).</li>
+  <li>Notice that this will not work with any kind of third party docking station (mac adapters might work).</li>
+  <li>If you do this with an iPhone 8s up to the iPhone X you have to activate the “Skip A11 BPR check” before starting the Jailbreak process (open the checkra1n app –&gt; Options –&gt; activate “Skip A11 BPR check”).</li>
+  <li>Make sure that your phone has enough charge before you try this - 50% should be enough.</li>
+  <li>Prior execution of the steps below make sure that you deactivate the pin/passcode/touchID/FaceID login.</li>
+  <li>Again, please do not use your iDevice with personal data for this. Jailbreaking your iDevice removes important security restrictions!</li>
+  <li>Checkra1n is a semi-tethered jailbreak variant which means that it will last until the device restarts.</li>
+  <li>Take note that jailbreaking your iOS device with this method can be reversed but that I will not take any responsibility for any damage to your devices that might occure. Do your research aside from this article and make sure that you understand what you do before taking any action.</li>
+  <li>All techniques provided in my articles are solely meant for ethical hacking, educational purposes or personal use.</li>
+  <li><strong>Please be aware that a failure while jailbreaking your device can damage your device permanently and irreversably!</strong></li>
+</ul>
+
+<h1 id="jailbreaking-ios-120-1471-with-checkra1n">Jailbreaking iOS 12.0-14.7.1 with checkra1n</h1>
+
+<p>Step 1: Download the latest version of checkra1n from the offical website: <a href="https://checkra.in/">https://checkra.in</a> –&gt; “Get the beta now” - make a selection for the installer based on your environment. Normally it will detect your environment automatically.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/1checkra1nWebsite.png" alt="checkra1n website" class="center-image" /></p>
+
+<p>Step 2: Click on “Download for macOS”, optionally check the downloaded installer against malware with your antivirus of choise (if at all only “MacOS:Jailbreak-BI” should pop up, which is ok) and check the integrity by comparing the provided SHA256 hash.</p>
+
+<p>Step 3: Save the installer locally.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/2checkra1nDownload.png" alt="checkra1n download" class="center-image" /></p>
+
+<p>Step 4: Install checkra1n on macOS by opening it from your desktop.</p>
+
+<p>Step 5: Drag the application into the “Applications” folder.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/3checkra1nInstallation.png" alt="checkra1n installation" class="center-image" /></p>
+
+<p>Step 6: Open your macOS “System Preferences”, go to “Security &amp; Privacy” and click on “Click the lock to make changes.”. Enter your password and proceed.</p>
+
+<p>Step 7: Now click on “Open Anyway” to allow the execution of “checkra1n” even though the developer could not be identified by Apple.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/4checkra1nSecurityException.png" alt="checkra1n security exception" class="center-image" /></p>
+
+<p>Step 8: Confirm your choice by clicking on “Open”.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/5checkra1nSecurityException.png" alt="checkra1n security exception" class="center-image" /></p>
+
+<p>Step 9: With your iPhone connected over USB you will now be presented with the start screen of checkra1n.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/6checkra1nOpenedWithiPhoneConnected.png" alt="checkra1n first start" class="center-image" /></p>
+
+<p>Step 10: OPTIONAL - Get your iPhone ready by starting it into DFU mode. On iPhone 6s you have to press and hold the power button + home button until you are in DFU mode.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/7checkra1niPhoneDFUMode.png" alt="checkra1n DFU mode" class="center-image" /></p>
+
+<p>Step 11: Next start the app and click on “Options”.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/8checkra1nOptions.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 12: If you have your device already updated to iOS 14.7.1 (and if something is not working) select the first option. Activate the verbose mode to see a wall of text while checkra1n gets executed (more or less only because it looks neat :-)</p>
+
+<p>Step 13: For all of you who are doing this with an iPhone 8s up to X, you have to select this option too.</p>
+
+<p>Step 14: After everything is selected, click on “Back”.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/9checkra1nOptionSelection.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 15: You can now click on “Start” to start checkra1n and the exploitation.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/10checkra1nStart.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 16: Read the instructions displayed and follow them for your device to go into DFU (if not happend already) and execute the checkra1n payload. I have set mine already into DFU mode because I have made experience that his is working better.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/11checkra1nStart.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 17: After you have executed the steps successfully it should look like this. Your device should now boot up with a wall of text, indicating the execution of checkra1n.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/12checkra1nBoot.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 18: Finally, you get a message that everything is done and you can click on “Done” to close the window.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/13checkra1nDone.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 19: On your phone you should now see an app installed with the name “checkra1n” - this can take a couple seconds after the first start, just wait a while and then search your apps.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/14checkra1nInstalled.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p>Step 20: Open your newly installed checkra1n app. This verifies a successful installation. You can now proceed and install the Cydia store to download applications like OpenSSH, UNIX tools, SSLKillSwitch etc.</p>
+
+<p><img src="http://localhost:4000/assets/images/article2/15checkra1nAppOpened.png" alt="checkra1n Options" class="center-image" /></p>
+
+<p><strong>Congratulations on jailbreaking your iDevice!</strong> 🎉📱🏆🎊</p>
+
+<hr />
+<p>Thank you very much for reading this article and feel free leave a comment. Subscribe and share!
+If you want to read my first article <a href="http://localhost:4000/blog/iOS-App-Penetration-Testing">“Hacking Mobile Apps - easier done than said!”</a>, please click the link!</p>
+
+<p>P.S. Many thanks to Daniel and my wife, Morgan, for editing this article. They helped me deliver quality content. You are awesome!</p>
+
+<p>All the best,<br />
+Florian</p>
+
+<style>
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>]]></content><author><name></name></author><category term="mobile hacking" /><category term="app hacking" /><category term="iOS" /><summary type="html"><![CDATA[This article will give you a kick start into the world of iOS mobile App hacking with jailbreaking your iPhone!]]></summary></entry><entry><title type="html">Hacking Mobile Apps - easier done than said!</title><link href="http://localhost:4000/blog/iOS-App-Penetration-Testing" rel="alternate" type="text/html" title="Hacking Mobile Apps - easier done than said!" /><published>2021-10-15T00:00:00+02:00</published><updated>2021-10-15T00:00:00+02:00</updated><id>http://localhost:4000/blog/iOS-App-Penetration-Testing</id><content type="html" xml:base="http://localhost:4000/blog/iOS-App-Penetration-Testing"><![CDATA[<p>With people spending a <a href="https://www.statista.com/statistics/319732/daily-time-spent-online-device/">larger percentage</a> of their time on their mobile phones than they do on their desktop/laptop there is an increasing market for hackers to steal data, surveil people, compromise bank accounts and many more threats. Millions of new app releases within Apple’s App Store and Google’s Play Store occur every day, which will impact mobile devices of businesses and casual users alike. While businesses attempt to deal with these issues by using a so called <a href="https://en.wikipedia.org/wiki/Mobile_device_management">Mobile Device Management</a> system to deploy endpoint security mechanisms to protect against these threats on their devices, people like you and me (at least privately) are dependent on the security patches of mostly Apple, Google and the developers of the mobile apps we use.     <br />
+I would say it is far more likely that you get digitally robbed by some hackers than being robbed physically on the street. In most cases it is easier too. It can happen everywhere and at any time. Especially if you are <a href="https://thehackernews.com/2021/10/apple-pay-can-be-abused-to-make.html">using Apple Pay</a> with a VISA card right now. ;-)<br />
+But, why is that so?<br />
+Well, today everything has to be online, quickly available and easy to use with the tiny computers that we are carrying around every day, everywhere we go <strong>PERIOD</strong> - if it makes sense or not.</p>
+
+<h1 id="about-mobile-app-security-and-data-privacy">About Mobile App Security and Data Privacy</h1>
+
+<p>Out of my experience, the current overall security and data privacy state of iOS and Android Apps is disappointing. If you look into apps for a couple of hours you will often see insecure communication and cookies, leaked authorization data, outdated library usage and privacy violation issues.<br />
+Most of these problems could be addressed already during the initial management phases and planned out as a “security by design” paradigm.
+Then, if you go for a deep dive into network and dynamic analysis of the app you will find even scarier things lurking in the deep which are either listed within the <a href="https://owasp.org/www-project-mobile-top-10/">OWASP Mobile Top 10</a> or the <a href="https://owasp.org/www-project-top-ten/">OWASP Web Top 10</a> security vulnerabilities. The reason why there are mostly web vulnerabilities found is that most apps make use of Web Views which are available for both <a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/web-views/">iOS</a> and <a href="https://developer.android.com/guide/webapps/webview">Android</a>. They make a cross platform development for apps easier with the negative effect that an improper configuration of them can lead to severe security vulnerabilities due to web vulnerabilities. 
+Furthermore, most mobile apps rely on user tracking to make money which is, out of a business point of view, ok, <strong>but</strong> from my point of view they must always:</p>
+<ol>
+  <li>Inform the user before gathering the user’s behaviour to make money.</li>
+  <li>Never violate any local applicable law, like GDPR in Europe.</li>
+  <li>At best give the user an option to opt out the tracking when the user first opens the app.</li>
+</ol>
+
+<p>In conclusion, for our society mobile security is one of the most important fields of security that is out there. Security flaws in standards and vulnerabilities in software are impacting everyone, from businesses to private people. The “security by design” paradigm should be followed and used as early in the planning phase of an app as possible.</p>
+
+<blockquote>
+  <h1 id="education-is-the-key-to-unlock-the-golden-door-of-freedom">“Education is the key to unlock the golden door of freedom.”</h1>
+  <p>George Washington Carver</p>
+</blockquote>
+
+<p>I have spent the last 6 years dealing with security issues surrounding mobile devices, mobile operating systems and their mobile apps. Within the last year I did a deep dive into the practise of hacking these mobile device’s, apps and features to find security issues and report them to contribute to the mobile security field.</p>
+
+<p>While Apple, Goggle and most developers try to keep up to date with the webb and flow of security issues along with their fixes, there is still a lot to do to keep hackers from abusing their power for evil purposes.<br />
+Because all help in my field of expertise is welcome and needed, I will soon publish open source tools and articles on how to start with the mobile hacking of apps and the identification of security issues within mobile devices. Like in George Washington Carver’s quote, knowledge and continuous education will give freedom to those who seek it. <br />
+While freedom is objective please keep care, once you start down the dark path it will forever dominate your destiny. Choose the right one and contribute to the security of everyone.</p>
+
+<hr />
+<p>Thank you very much for reading my first article and feel free to tell me if you agree or disagree. Check out my next article about <a href="http://localhost:4000/blog/jailbreaking-iOS14">jailbreaking an iPhone and getting started</a> with iOS hacking.<br />
+ Subscribe and share!</p>
+
+<p>All the best,<br />
+Florian</p>
+
+<style>
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>]]></content><author><name></name></author><category term="mobile hacking" /><category term="app hacking" /><category term="iOS" /><category term="Android" /><summary type="html"><![CDATA[Mobile Devices and Apps are the most used computers nowadays that we carry around everywhere! The Cyber Security risks involved are discussed within this article.]]></summary></entry></feed>

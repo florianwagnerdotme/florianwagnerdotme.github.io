@@ -1,59 +1,99 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# WhatATheme
+markdown: kramdown
 
-name: FLORIAN WAGNER
-title: FLORIAN WAGNER
-email: mail@florianwagner.me
-description: >- # this means to ignore newlines until "baseurl:"
-  Greetings, 
-  My name is Florian Wagner and I'm a passionate White Hat Hacker and IT Security Expert living in the Kotor Bay Area in Montenegro.
-  My mission is to provide frameworks, tools and services to increase the information security posture of businesses and people around the world.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: florianwagnerdotme
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
+
+# Title of the Site
+title: Wagner White Hat Hacking
+# Description of the Site
+description: Our mission is to inspire with passion for Cyber Security and project this passion onto everything we do and offer. TRUST US and we will focus with a burning passion to find the needle in your NEEDLEstack!
+
+# URL of Image of the Site
+site-image: /WhatATheme/assets/images/meta.jpg
+# Keywords of the Site
+site-keywords: Site, Template, Theme
+# URL for the Image of custom Favicon
+favicon-url: 
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: https://cdn.pixabay.com/photo/2018/04/22/22/57/hacker-3342696_1280.jpg 
+#heroimage: https://cdn.pixabay.com/photo/2017/01/01/14/39/hacker-1944688_1280.jpg 
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: mail@florianwagner.me 
+#facebook_username: 
 twitter_username: florianwagnerme
+#instagram_username: thedevslot
+linkedin_username: florianwagnerdotme
 github_username:  florianwagnerdotme
+#youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
+#reddit_username: /
+#behance_username: /
+#dribbble_username: /
+#spotify_username: /
 
+# Google Analytics
+google-analytics: UA-163806439-1
 
+# Disqus
+disqus-shortname: 
+
+# Name of the Author
+author-name: Florian Wagner
+# URL for the Image of the Author
+author-image: https://florianwagner.me/assets/images/about/profilePhoto.jpg
+# 60 Words About the Author
+author-about: My name is Florian Wagner, CEO and founder of Wagner White Hat Hacking. I worked as a Project Security Manager and Penetration Tester for Deutsche Telekom Security from 2016 to 2021. After this I decided to be a lifelong entrepreneur and founded my own Cyber Security Company, partnering with other security firms to continue deliver IT security services for their customers and my own. My experiences range from penetration testing of government applications over managing the security of big projects like the German Corona Warn App (CWA) and its European Federation Gateway Service (EFGS) to partaking in the IDM security standardization of projects within the GSMA. Wagner White Hat Hacking provides quality Cyber Security and Ethical Hacking Services. We helped businesses to identify, manage and fix thousands of Cyber Security vulnerabilities in various projects around the globe.
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://me.linkedin.com/in/florianwagnerdotme
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Build settings
-theme: minima
 plugins:
+  - jekyll-admin
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

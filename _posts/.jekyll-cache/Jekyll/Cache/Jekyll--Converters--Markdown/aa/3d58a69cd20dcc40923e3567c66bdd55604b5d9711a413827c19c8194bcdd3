@@ -1,0 +1,60 @@
+I"�<p>While I am mostly writing about mobile and web security this is an exception.
+Because I noticed that many people I talk to have never heard about it, I want to show you how the software “Log4j” can fail your company and how you can prevent your assets from being in danger by taking action now!</p>
+
+<p>In the following ~5min read I will elaborate on what actions businesses have to takle immediately, to not be out of business after the holidays!</p>
+
+<p><img src="http://localhost:4000/assets/article3/log4jArticlePic.png" alt="IgnoreLog4j: I want to have holidays!" class="center-image" /></p>
+
+<p>“Log4j comic” illustrated by Florian Wagner - <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> 27/12/21</p>
+
+<h1 id="so-in-short-what-the-log4j-and-why-do-i-want-to-raise-your-awareness-about-this">So in short, what the Log4j and why do I want to raise your awareness about this?</h1>
+
+<p>Log4j is a logging component in software that allows you to write away events that seem important. Logging intentionally is there to give the IT team an inside into how your software or piece of technology is running in production.
+Furthermore, logs are used for forensic analysis after a cyber attack to identify what happened and ideally to have hints to who attacked you and how.
+Exactly these logs are now affected by a security vulnerability that allows an attacker to craft a malicious text and send it to your vulnerable software, either by just injecting it into a form field within your application or sending a HTTP request over the internet.
+<strong>An attacker who uses this vulnerability, called <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228">Log4Shell</a>, can get sensitive information out of your systems and even take over the system that is vulnerable. After this an attacker is able to do everything from attacking more systems in your network, spying on you, stealing your data or applying a worm and encrypting everything like it happened in 2017 with <a href="https://www.cisa.gov/uscert/sites/default/files/FactSheets/NCCIC%20ICS_FactSheet_WannaCry_Ransomware_S508C.pdf">WannaCry</a>.</strong></p>
+
+<h1 id="is-there-evidence-of-systems-being-attacked">Is there evidence of systems being attacked?</h1>
+
+<p><a href="https://twitter.com/eastdakota/status/1469800951351427073?s=21">Since December 1st</a> this vulnerability is actively being used to hack systems around the globe and yours could be the next.
+Since the public disclosure the Maritime Sustainment Technology and Innovation Consortium <a href="https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation">(MSTIC) reported</a> that nation state activity groups from China, Iran, North Korea, and Turkey are focusing on hacking vulnerable systems now. 
+Checkpoint has measured over 800.000 attacks only from the December 9th to 13th and called it the Cyber pandemic, they have a great article worth reading, if you want to learn more, <a href="https://blog.checkpoint.com/2021/12/13/the-numbers-behind-a-cyber-pandemic-detailed-dive/">click here</a>.</p>
+
+<h1 id="recommended-actions-to-take">Recommended actions to take:</h1>
+
+<ol>
+  <li>Ask yourself and your IT team: Are we vulnerable?
+    <ol>
+      <li>Speak to your IT team and see if they know about this. If not, make them aware.</li>
+      <li>Do you have a software asset register? —&gt; See if you use software that makes use of Log4j.</li>
+      <li>Hire a penetration tester to find your vulnerable systems and make sure they are fixed properly.</li>
+      <li>Apply the Log4j 2.15.0 and the upcoming 2.16.0 patch as soon as possible.</li>
+    </ol>
+  </li>
+  <li>Make sure to apply patches to other software that is used in your company. If a software patch is release in the next couple of days it is probably to fix Log4j in that software.</li>
+</ol>
+
+<h1 id="other-things-to-consider">Other things to consider:</h1>
+
+<ol>
+  <li>Don’t let your guards down for the holidays, this is the opportunity for hackers and they will not miss it! Even <a href="https://www.cisa.gov/uscert/ncas/current-activity/2021/11/22/reminder-critical-infrastructure-stay-vigilant-against-threats">America’s CISA</a> put out a warning over the holidays for businesses.</li>
+  <li>Remember, if you make use of open source software, then contribute back next time. Even a coffee donation of 2$ could help these people to provide secure and good software for everyone.</li>
+  <li>The best recommendation: Learn from it! Most businesses do not know how to value the importance of Cyber Security in our world and the risk involved until something happens.</li>
+</ol>
+
+<hr />
+
+<p>If you have any questions feel free to contact me. You find my contact details below.
+May Log4Shell not affect you, Merry Christmas and a Happy New Year!</p>
+
+<p>All the best,
+Florian </p>
+
+<style>
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>
+:ET
