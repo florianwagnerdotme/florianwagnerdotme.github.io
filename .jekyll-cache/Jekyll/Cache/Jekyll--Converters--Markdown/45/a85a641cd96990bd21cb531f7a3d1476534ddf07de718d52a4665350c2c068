@@ -1,0 +1,29 @@
+I"Ì<p><img src="http://localhost:4000/assets/images/services/itSecurityManagement.png" alt="Upps... here should be a picture. Please inform us about this issue that we can fix it!" class="center-image" /></p>
+
+<p>We offer <strong>Cyber Security Management and Advice</strong> on every level from projects, DevOps to advising the CEO, CISO or COO of your company.</p>
+
+<p><strong>This can include:</strong></p>
+<ul>
+  <li>security threat modeling</li>
+  <li>organization of penetration testing engagements</li>
+  <li>analysis of your password policy</li>
+  <li>evaluation of vulnerabilities</li>
+  <li>cyber security policy creation and review</li>
+  <li>setup ond management of bug bounty programs</li>
+  <li>performing as the CISO of your company</li>
+</ul>
+
+<p>We offer you a tailored solution to your problem that fits perfectly to your needs.<br />
+Feel free to reach out to us that we can start discussing your questions and problem.</p>
+
+<h3 id="interested-click-to-contact-or-arrange-a-meeting-with-us">Interested? Click to, <a href="http://localhost:4000/#contact">contact</a> or <a href="https://calendly.com/wwhh">arrange a meeting</a> with us!</h3>
+
+<style>
+.center-image
+{
+	margin: 0 auto;
+	display: block;
+}
+</style>
+
+:ET

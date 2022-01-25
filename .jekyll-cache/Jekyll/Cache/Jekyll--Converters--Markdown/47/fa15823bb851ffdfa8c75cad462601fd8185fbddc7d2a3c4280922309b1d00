@@ -1,0 +1,39 @@
+I"·<p><img src="http://localhost:4000/assets/images/services/externalPentesting.png" alt="Upps... here should be a picture. Please inform us about this issue that we can fix it!" class="center-image" /></p>
+
+<p>An <strong>External Penetration Test</strong> is an outsider attack emulation by an Ethical Hacker. The goal is to gain access to internal resources without insider knowledge and emulate a real Hacker attack on your systems visible and accessible from the Internet. To archive this goal our Ethical Hacker will use Open-Source Intelligence (OSINT) together with vulnerability scanning and other hacking techniques to gather sensitive information of the exposed target. The goal of this engagement is to gain access through exploitation attempts of the found vulnerabilities and enumerate as far as possible.</p>
+
+<h1 id="our-penetration-testing-methodology">Our Penetration Testing Methodology</h1>
+
+<p>All our penetration tests are performed based on IT Security industry standards and our own frameworks.</p>
+
+<p><strong>Standards that we are using:</strong></p>
+
+<ul>
+  <li><a href="https://owasp.org/www-project-web-security-testing-guide/v42/">OWASP WSTG v4.2</a></li>
+  <li><a href="https://mobile-security.gitbook.io/mobile-security-testing-guide">OWASP MSTG v1.2</a></li>
+  <li><a href="http://www.pentest-standard.org">PTES</a></li>
+</ul>
+
+<p>While executing a penetration test following cyclic methodology is used to ensure quality and efficiency during an engagement.</p>
+
+<ol>
+  <li><strong>Planning:</strong> Before starting a penetration testing engagement we meet up with our client to setup goals, the scope and rules of the penetration test. Furthermore, a threat modeling of the application will be made to specify the engagement scope and assets to target.</li>
+  <li><strong>Discovery:</strong> Through a security analysis, include scanning and initial enumeration of the target, potential security vulnerabilities are identified and preparations are made to exploit the target.</li>
+  <li><strong>Attack:</strong> With the knowledge gained through the discovery phase attacks are planned and executed by the penetration tester against the target. Further enumeration of the target may lead to additional discovery phases. This phaseâ€™s goal is to determine the impact of the found vulnerabilities.</li>
+  <li><strong>Reporting and Presenting:</strong> The Penetration Tester will document all vulnerabilities, exploits executed and concludes everything into a written report for the prospect. This report includes remediation strategies to fix the found issues and recommendations to strengthen the weak points from a security perspective. All findings will be presented to the client in a final meeting.</li>
+  <li><strong>Retesting:</strong> Continues retesting ensures that the application stays secure and found vulnerabilities got fixed properly. In this optional engagement the penetration tester focuses mainly on the previously found vulnerabilities. Retesting of the application can be defined in the planning phase or booked seperately.</li>
+</ol>
+
+<p><img src="http://localhost:4000/assets/images/pentestingMethodology.png" alt="Our testing Methodology" class="center-image" /></p>
+
+<h3 id="interested-click-to-contact-or-arrange-a-meeting-with-us">Interested? Click to, <a href="http://localhost:4000/#contact">contact</a> or <a href="https://calendly.com/wwhh">arrange a meeting</a> with us!</h3>
+
+<style>
+.center-image
+{
+	margin: 0 auto;
+	display: block;
+}
+</style>
+
+:ET
