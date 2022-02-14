@@ -3,12 +3,10 @@ title: Imprint
 layout: page
 ---
 
-# WAGNER WHITE HAT HACKING LLC
-> Župa bb  
-85320 Tivat  
-Montenegro 
-   
-[Contact us!]({{ site.url }}/#contact) We are operating in timezone CEST.
+# LEGAL
+Greetings, this is Florian Wagner and you are on my personal website.
+If you have any questions feel free to contact me:   
+[Contact me!]({{ site.url }}/#contact) I am operating in timezone CEST.
 
 # Attributions
 
