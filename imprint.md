@@ -4,7 +4,13 @@ layout: page
 ---
 
 # LEGAL
-Greetings, this is Florian Wagner and you are on my personal website.
+Greetings, this is Florian Wagner and you are on my personal website.  
+  
+> Hochstraße 11, 8  
+> 1230 Wien  
+> Austria    
+  
+  
 If you have any questions feel free to contact me:   
 [Contact me!]({{ site.url }}/#contact) I am operating in timezone CEST.
 
