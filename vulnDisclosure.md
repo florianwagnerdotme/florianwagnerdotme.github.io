@@ -1,4 +1,7 @@
-# Florian Wagner - Vulnerability Disclosure Policy
+---
+title: Florian Wagner - Vulnerability Disclosure Policy
+layout: page
+---
 
 I, Florian Wagner, an independent security researcher, am dedicated to working closely with the open-source community and projects affected by vulnerabilities to protect users and ensure coordinated disclosure. When identifying a vulnerability, I follow a responsible disclosure process:
 
