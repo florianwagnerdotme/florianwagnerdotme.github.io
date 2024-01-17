@@ -23,5 +23,3 @@ I, Florian Wagner, an independent security researcher, am dedicated to working c
 I believe in fostering a collaborative and responsible security community to enhance the overall safety of projects and their users. I am committed to ethical and transparent practices in vulnerability disclosure.
 
 For inquiries or to report a vulnerability, contact me, Florian Wagner, at [mail[at]florianwagner.me](mailto:mail@florianwagner.me).
-
-This disclosure policy is based on [GitHub Security Lab](https://securitylab.github.com/advisories/#policy)'s disclosure policy.
