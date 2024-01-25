@@ -1,5 +1,5 @@
 ---
-title: Florian Wagner - Vulnerability Disclosure Policy
+title: Vulnerability Disclosure Policy
 layout: page
 ---
 
@@ -15,11 +15,12 @@ I, Florian Wagner, an independent security researcher, am dedicated to working c
     - The responsibility for developing and releasing a patch lies with the project team. I aim to assist by providing detailed information about the vulnerability.
 
 4. **Disclosure Deadline:**
-    - My disclosure deadline for publicly disclosing a vulnerability is 90 days after the first report to the project team.
+   - My disclosure deadline for publicly disclosing a vulnerability is 90 days after the first report to the project team.
 
-5. **Flexibility:**
+6. **Flexibility:**
     - I acknowledge the hard work maintainers invest in fixing vulnerabilities, and I understand that additional time may be necessary. I am open to discussing my disclosure policy to accommodate specific requirements when warranted.
 
 I believe in fostering a collaborative and responsible security community to enhance the overall safety of projects and their users. I am committed to ethical and transparent practices in vulnerability disclosure.
 
-For inquiries or to report a vulnerability, contact me, Florian Wagner, at [mail[at]florianwagner.me](mailto:mail@florianwagner.me).
+For inquiries or to report a vulnerability, contact me, Florian Wagner, at mail[at]florianwagner.me. 
+You can find my PGP public key on the main page at the bottom.
