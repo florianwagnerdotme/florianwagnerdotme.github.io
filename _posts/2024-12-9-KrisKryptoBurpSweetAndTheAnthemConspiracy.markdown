@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Kris Krypto, Burp Sweet, and the Anthem Conspiracy"
-post-image: "{{ site.url }}/assets/images/KrisAndBurpSweet.jpg"
-description: A humorous yet sharp look into the misadventures of a pet store worker/hacker and his burping pet, uncovering corporate evil at the company next door.
+post-image: "https://florianwagner.me/assets/images/KrisAndBurpSweet.jpg"
+description: A humorous yet sharp look into the misadventures of a pet store worker by day, hacker at night and his burping pet, uncovering corporate evil at the company next door.
 tags: 
 - hacking story
 - cybersecurity
