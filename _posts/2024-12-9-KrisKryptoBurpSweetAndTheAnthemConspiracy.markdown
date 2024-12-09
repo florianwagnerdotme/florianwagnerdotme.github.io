@@ -10,7 +10,7 @@ tags:
 - cyber thrillers
 ---
 
-By day, Kris Krypto was an unassuming guy living in the corner apartment of a 25th-story building. He nodded politely in the hallways, avoided small talk, and quietly worked his shifts at a pet store around the block. By night, Kris transformed into a sarcastic digital phantom, uncovering secrets others worked tirelessly to bury—or at least wished to. His trusty companion was **Burp Sweet**, a peculiar dog with a perpetually drooling tongue that couldn’t stay in his mouth and a habit of burping at all the wrong moments.
+By day, Kris Krypto was an unassuming guy living in the corner apartment of a 25th-story building. He nodded politely in the hallways, avoided small talk, and quietly worked his shifts at a pet store around the block. By night, Kris transformed into a sarcastic digital phantom, uncovering secrets others worked tirelessly to bury — or at least wished to. His trusty companion was **Burp Sweet**, a peculiar dog with a perpetually drooling tongue that couldn’t stay in his mouth and a habit of burping at all the wrong moments, tastefully named after his favorite tool.
 
 "Burp," Kris said as he booted up his multi-monitor rig, "tonight we’re taking on Anthem Technologies."  
 Burp Sweet, perched on a pile of discarded hoodies, blinked lazily, his long tongue flopping sideways in a gesture of approval.
@@ -22,20 +22,20 @@ Kris began with reconnaissance. A quick **Nmap** scan illuminated the usual susp
 "Port 3389? You might as well hang a ‘Hack Me’ sign on your front door," Kris muttered, shaking his head. Burp Sweet burped softly from his hoodie throne, providing moral support in his own unique way.
 
 Switching to **Burp Suite**, Kris intercepted the company’s web traffic. Within minutes, he found their `robots.txt` file.  
-"Ah, the infamous `robots.txt`—the digital equivalent of saying, ‘Please don’t look here.’ What treasures await?" Kris opened the file and promptly let out a mocking gasp. "A password? In plain text? Anthem, you’re making this too easy."  
-Burp Sweet yawned in apparent boredom, unimpressed by the company’s security practices.
+"Ah, the infamous `robots.txt`—the digital equivalent of saying, ‘Please don’t look here.’ What fail awaits me now?" Kris opened the file and promptly let out a mocking gasp. "A password? WTF?! Anthem, why? but thanks."  
+Burp Sweet yawned in apparent boredom, unimpressed by the company’s security posture.
 
 # Act 2: Cracking the CMS
 
 A quick **ffuf** scan revealed a promising endpoint: `/umbraco`.  
 "Umbraco CMS," Kris said, typing furiously. "Fantastic choice if you’re aiming for the kind of security held together with duct tape and hope."
 
-He guessed the administrator’s email—**SG@anthem.com**—thanks to some casual LinkedIn recon on Solomon Grund, Anthem’s overconfident IT admin, who had bragged online about the tech stack he managed. Paired with the password from `robots.txt`, the CMS dashboard loaded instantly.  
+He guessed the administrator’s email—**SG@anthem.com**—thanks to some casual LinkedIn recon on Simon Gärtner, Anthem’s overconfident IT admin, who had bragged online about the tech stack he managed. Paired with the password from `robots.txt`, the CMS dashboard loaded instantly.  
 "Ka-ching! Welcome to the admin panel," Kris said, spreading his arms theatrically. From his hoodie throne, Burp Sweet let out a low burp, as if punctuating Kris’s sarcasm.
 
 # Act 3: Digging for Dirt
 
-Kris poked around the CMS for anything juicy. It didn’t take long to find a folder labeled **Project Anthemis**. Inside were encrypted memos. With practiced ease, Kris cracked the encryption and uncovered Anthem’s dirty secret: plans to sell fake security solutions while secretly harvesting client data.
+Kris poked around the CMS for anything juicy. It didn’t take long to find a folder labeled **Project Anthemis**. Inside were encrypted memos. With practiced ease, Kris cracked encryption and uncovered Anthem’s dirty secret: plans to sell fake security solutions while secretly harvesting client data.
 
 "Wow, Anthem," Kris said, scrolling through the files. "You’re not just bad at security—you’re *profiting* off it. That’s almost... artistic in its villainy."  
 Burp Sweet hopped down from his hoodie throne and plodded over to Kris’s desk, resting his head on Kris’s lap. Kris scratched the dog’s ears absently.  
@@ -80,8 +80,13 @@ Burp Sweet burped softly in his sleep, his tongue twitching slightly. Kris chuck
 --------------------------------------
 
 --> Based on TryHackMe's Anthem: [TryHackMeAnthem]
+
+
 I hope you liked it!
+
 All the best, 
+
 FLOW
+
 
 [TryHackMeAnthem]: https://tryhackme.com/r/room/anthem
